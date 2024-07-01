@@ -1,0 +1,15 @@
+#Bag{
+  border: none;
+  background-color: hsl(90, 73%, 48%);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+#wishlist{
+  border: 2px solid black;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 700;
+}
