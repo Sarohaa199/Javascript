@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cricket.css">
+  <title>Crciket Game</title>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+  //This will generate a random number between 0 and 3
+  let randomNumber =Math.random()*3;
+
+  let computerChoice;
+  if (randomNumber >0 && randomNumber <=1){
+    computerChoice='Bat';
+  } else if(randomNumber >1 && randomNumber <=2){
+    computerChoice='Ball';
+  }
+  else{
+    computerChoice='Stump';
+  }
+  
+  let resultMsg;
+  if(computerChoice =='Ball'){
+    resultMsg='User Won';
+  }
+  else if(computerChoice=='Bat'){
+    resultMsg='Its a Draw'
+  }
+  else if(computerChoice=='Stump'){
+    resultMsg='Computer Won'
+  }
+
+  alert(`you hav chosen Bat. Computer have choosen ${computerChoice} and ${resultMsg}`);
+  ">Bat</button>
+  <button onclick="
+  //This will generate a random number between 0 and 3
+randomNumber =Math.random()*3;
+
+if (randomNumber >0 && randomNumber <=1){
+  computerChoice='Bat';
+} else if(randomNumber >1 && randomNumber <=2){
+  computerChoice='Ball';
+}
+else{
+  computerChoice='Stump';
+}
+  if(computerChoice =='Stump'){
+    resultMsg='User Won';
+  }
+  else if(computerChoice=='Ball'){
+    resultMsg='Its a Draw'
+  }
+  else if(computerChoice=='Bat'){
+    resultMsg='Computer Won'
+  }
+  alert(`you hav chosen Bat. Computer have choosen ${computerChoice} and ${resultMsg}`);
+  ">Ball</button>
+  <button onclick="
+  //This will generate a random number between 0 and 3
+randomNumber =Math.random()*3;
+
+if (randomNumber >0 && randomNumber <=1){
+  computerChoice='Bat';
+} else if(randomNumber >1 && randomNumber <=2){
+  computerChoice='Ball';
+}
+else{
+  computerChoice='Stump';
+}
+  if(computerChoice =='Bat'){
+    resultMsg='User Won';
+  }
+  else if(computerChoice=='Stump'){
+    resultMsg='Its a Draw'
+  }
+  else if(computerChoice=='Ball'){
+    resultMsg='Computer Won'
+  }
+  alert(`you hav chosen Bat. Computer have choosen ${computerChoice} and ${resultMsg}`);
+  ">Stump</button>
+</body>
+</html>
