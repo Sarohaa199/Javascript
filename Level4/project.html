@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .js-odd{
+      background-color: green;
+    }
+    .js-even{
+      background-color: yellowgreen;
+    }
+  </style>
+  <title>Practice Exercise</title>
+</head>
+<body>
+  <h2 id="greeting"></h2>
+
+  <button id="my-button" onclick="buttonpressed();">0</button>
+  <script>
+  let numberoftimesclicked =localStorage.getItem('nooftimesclicked') || 0;
+  function buttonpressed(){
+  
+    numberoftimesclicked++;
+    localStorage.setItem('nooftimesclicked',numberoftimesclicked);
+    updatebutton();
+      
+    }
+
+  
+  function updatebutton(){
+    let button=document.querySelector('#my-button');
+    button.innerText= numberoftimesclicked;
+    if(numberoftimesclicked %2==0){
+      button.classList.remove('js-odd');
+      button.classList.add('js-even');
+    }
+    else{
+      button.classList.remove('js-even');
+      button.classList.add('js-odd');
+  }
+}
+updatebutton();
+
+/** This is for generating number**/
+function dogreeting(personname){
+   let date=new Date();
+   let hours= date.getHours();
+   let heading=document.querySelector('#greeting');
+   console.log(hours);
+   if(hours >5 && hours <12){
+    heading.innerText=`Good Morning ${personname}`
+   }
+   else if(hours> 12 && hours<18){
+    heading.innerText=`Good Afternoon ${personname}`
+   }
+   else{
+    heading.innerText=`Good Night ${personname}`
+   }}
+
+   dogreeting('Aman');
+
+
+  </script>
+</body>
+</html>
