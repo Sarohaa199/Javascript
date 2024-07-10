@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array and loops</title>
+</head>
+<body>
+  <script>
+    // let arr=[5,6];
+    // arr.unshift(4);
+    // arr.push(7);
+    // console.log(arr);
+    
+    // function arrayposition(arr,position){
+    //   return arr[position-1];
+    // }
+    // let arr=[1,2,3,45,3,2,132,213];
+    // console.log(arrayposition(arr,7));
+
+
+    // function arrcopy(arr){
+    //   return arr.slice(0,arr.length);
+    // }
+    // let arr=[5,2,3,4,5,6,7,8,9];
+    // let arr2=arrcopy(arr);
+    // console.log(arr2);
+    // console.log(arr);
+
+    function primenumber(num){
+    for(let i=2; i<num; i++){
+      if(num %i==0){
+        return false;
+      }
+    }
+    return true;
+    }
+    
+    let num=2;
+    let i=0;
+    while(i<10){
+    if(primenumber(num)){
+      console.log(num);
+      i++;  
+    }
+    num++;
+   }
+  
+
+  </script>
+</body>
+</html>
